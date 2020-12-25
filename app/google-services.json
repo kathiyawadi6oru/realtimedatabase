@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "7446836586",
+    "project_id": "reltimedatabase-69575",
+    "storage_bucket": "reltimedatabase-69575.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7446836586:android:2133d33669f0bd76f5a113",
+        "android_client_info": {
+          "package_name": "com.example.reltimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7446836586-33g4fh6fda0raih5i5aer3luuruo1piq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkKmkWXMQ5OodVx4G5crmf8s4okWnFLIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7446836586-33g4fh6fda0raih5i5aer3luuruo1piq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
