@@ -19,8 +19,8 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.FirebaseDatabase;
-import com.orhanobut.dialogplus.DialogPlus;
-import com.orhanobut.dialogplus.ViewHolder;
+/*import com.orhanobut.dialogplus.DialogPlus;
+import com.orhanobut.dialogplus.ViewHolder;*/
 
 import java.util.HashMap;
 import java.util.Map;
@@ -39,38 +39,42 @@ public class postadapter extends FirebaseRecyclerAdapter<post,postadapter.postvi
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull postviewholder holder, int position, @NonNull post model) {
+    protected void onBindViewHolder(@NonNull postviewholder holder, int position, @NonNull final post model) {
 
 
         holder.title.setText(model.getTitle());
         holder.name.setText(model.getName());
         holder.city.setText(model.getCity());
 
-        holder.edit.setOnClickListener(new View.OnClickListener() {
+        /*holder.edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogPlus dialog = DialogPlus.newDialog(context)
+                final DialogPlus dialog = DialogPlus.newDialog(context)
                         .setGravity(Gravity.CENTER)
                         .setMargin(50,0,50,0)
                         .setContentHolder(new ViewHolder(R.layout.content))
                         .setExpanded(false)  // This will enable the expand feature, (similar to android L share dialog)
                         .create();
                 View holderView = (LinearLayout)dialog.getHolderView();
+
                 EditText title = holderView.findViewById(R.id.title);
                 EditText name = holderView.findViewById(R.id.name);
                 EditText city = holderView.findViewById(R.id.city);
-                Button update = holderView.findViewById(R.id.update);
 
                 title.setText(model.getTitle());
                 name.setText(model.getName());
                 city.setText(model.getCity());
+
+                Button update = holderView.findViewById(R.id.update);
+
+
 
 
                 update.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
 
-                        Map<String,Object> map = new HashMap<>();
+                      *//*  Map<String,Object> map = new HashMap<>();
                         map.put("title",title.getText().toString());
                         map.put("name",name.getText().toString());
                         map.put("city",city.getText().toString());
@@ -83,13 +87,13 @@ public class postadapter extends FirebaseRecyclerAdapter<post,postadapter.postvi
                                     public void onComplete(@NonNull Task<Void> task) {
                                         dialog.dismiss();
                                     }
-                                });
+                                });*//*
                     }
                 });
                 dialog.show();
 
             }
-        });
+        });*/
     }
 
     @NonNull
